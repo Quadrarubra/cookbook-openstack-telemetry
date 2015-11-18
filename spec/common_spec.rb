@@ -41,7 +41,7 @@ describe 'openstack-telemetry::common' do
           user: 'ceilometer',
           group: 'ceilometer',
           mode: 0750
-          )
+        )
       end
     end
 
@@ -53,7 +53,7 @@ describe 'openstack-telemetry::common' do
           user: 'ceilometer',
           group: 'ceilometer',
           mode: 0640
-          )
+        )
       end
 
       it 'has default values' do
