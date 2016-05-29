@@ -15,7 +15,7 @@ log_config = /etc/openstack/logging.conf
 sample_source = <%= node["openstack"]["telemetry"]["sample_source"] %>
 
 ##### AMQP #####
-notification_topics = notifications,glance_notifications
+notification_topics = <%= node["openstack"]["telemetry"]["notification_topics"] %>
 
 glance_registry_host = <%= @image_endpoint.host %>
 periodic_interval = <%= node["openstack"]["telemetry"]["periodic_interval"] %>

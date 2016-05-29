@@ -66,6 +66,10 @@ default['openstack']['telemetry']['service-credentials']['cafile'] = nil
 # Verify HTTPS connections (for service polling authentication)
 default['openstack']['telemetry']['service-credentials']['insecure'] = false
 
+# Notification topics
+
+default['openstack']['telemetry']['notification_topics'] = 'notifications'
+
 # Type of endpoint in Identity service catalog to use for
 # communication with OpenStack services. (string value)
 default['openstack']['telemetry']['service-credentials']['os_endpoint_type'] = 'publicURL'
