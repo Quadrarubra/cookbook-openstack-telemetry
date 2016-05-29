@@ -30,6 +30,8 @@ default['openstack']['telemetry']['syslog']['use'] = false
 default['openstack']['telemetry']['verbose'] = 'true'
 default['openstack']['telemetry']['debug'] = 'false'
 
+default['openstack']['telemetry']['ssl']['enabled'] = false
+
 default['openstack']['telemetry']['api']['auth']['cache_dir'] = '/var/cache/ceilometer/api'
 
 default['openstack']['telemetry']['api']['auth']['version'] = node['openstack']['api']['auth']['version']
